@@ -11,6 +11,8 @@
 		<TextBlock
 			x:Name="NoMatchingCommandsTextBlock"
 			Padding="12,0,0,0"
+			FontFamily="FiraMono Nerd Font"
+			Foreground="#eb6f92"
 			RelativePanel.AlignLeftWithPanel="True"
 			RelativePanel.AlignVerticalCenterWithPanel="True"
 			Visibility="{x:Bind Path=ViewModel.NoMatchingCommandsTextBlockVisibility, Mode=OneWay}">
@@ -28,6 +30,9 @@
 			RelativePanel.AlignTopWithPanel="True"
 			SelectedIndex="{x:Bind Path=ViewModel.SelectedIndex, Mode=TwoWay}"
 			SelectionMode="Single"
-			Visibility="{x:Bind Path=ViewModel.ListViewItemsVisibility, Mode=OneWay}" />
+			Visibility="{x:Bind Path=ViewModel.ListViewItemsVisibility, Mode=OneWay}" 
+			FontFamily="FiraMono Nerd Font"
+			Background="#191724"/>
+			
 	</RelativePanel>
 </UserControl>

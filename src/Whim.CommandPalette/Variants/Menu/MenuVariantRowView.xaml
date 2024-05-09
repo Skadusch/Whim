@@ -13,32 +13,33 @@
 				<ResourceDictionary.ThemeDictionaries>
 					<ResourceDictionary x:Key="Dark">
 						<Style x:Key="KeybindBorderStyle" TargetType="Border">
-							<Setter Property="Background" Value="Transparent" />
-							<Setter Property="BorderBrush" Value="{ThemeResource SystemControlForegroundBaseMediumBrush}" />
+							<Setter Property="Background" Value="#26233a" />
+							<Setter Property="BorderBrush" Value="#31748f" />
 							<Setter Property="BorderThickness" Value="1" />
 							<Setter Property="CornerRadius" Value="2" />
 						</Style>
 						<Style x:Key="KeybindTextBlockStyle" TargetType="TextBlock">
-							<Setter Property="Foreground" Value="{ThemeResource SystemControlForegroundBaseMediumBrush}" />
+							<Setter Property="Foreground" Value="#e0def4" />
+							<Setter Property="FontFamily" Value="FiraMono Nerd Font" />
 						</Style>
 					</ResourceDictionary>
 
 					<ResourceDictionary x:Key="Light">
 						<Style x:Key="KeybindBorderStyle" TargetType="Border">
-							<Setter Property="Background" Value="Transparent" />
-							<Setter Property="BorderBrush" Value="{ThemeResource SystemControlForegroundBaseMediumBrush}" />
+							<Setter Property="Background" Value="#f2e9e1" />
+							<Setter Property="BorderBrush" Value="#286983" />
 							<Setter Property="BorderThickness" Value="1" />
 							<Setter Property="CornerRadius" Value="2" />
 						</Style>
 						<Style x:Key="KeybindTextBlockStyle" TargetType="TextBlock">
-							<Setter Property="Foreground" Value="{ThemeResource SystemControlForegroundBaseMediumBrush}" />
+							<Setter Property="Foreground" Value="#575279" />
 						</Style>
 					</ResourceDictionary>
 				</ResourceDictionary.ThemeDictionaries>
 			</ResourceDictionary>
 		</RelativePanel.Resources>
 
-		<TextBlock x:Name="CommandTitle" />
+		<TextBlock x:Name="CommandTitle" Foreground="#e0def4" FontFamily="FiraMono Nerd Font"/>
 
 		<Border
 			x:Name="CommandKeybindBorder"

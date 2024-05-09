@@ -11,6 +11,8 @@
 		<TextBlock
 			x:Name="NoMatchingOptionsTextBlock"
 			Padding="12,0,0,0"
+			Foreground="#9ccfd8"
+            FontFamily="FiraMono Nerd Font"
 			RelativePanel.AlignLeftWithPanel="True"
 			RelativePanel.AlignVerticalCenterWithPanel="True"
 			Visibility="{x:Bind Path=ViewModel.NoMatchingOptionsTextBlockVisibility, Mode=OneWay}">
@@ -21,6 +23,7 @@
 			x:Name="ListViewItems"
 			IsItemClickEnabled="True"
 			IsTabStop="False"
+			FontFamily="FiraMono Nerd Font"
 			ItemClick="ListViewItems_ItemClick"
 			ItemsSource="{x:Bind Path=ViewModel.SelectRows, Mode=OneWay}"
 			RelativePanel.AlignLeftWithPanel="True"
@@ -28,11 +31,14 @@
 			RelativePanel.AlignTopWithPanel="True"
 			SelectedIndex="{x:Bind Path=ViewModel.SelectedIndex, Mode=TwoWay}"
 			SelectionMode="Single"
+			Background="#26233a"
 			Visibility="{x:Bind Path=ViewModel.SelectRowsItemsVisibility, Mode=OneWay}">
 			<ListView.ItemContainerStyle>
 				<Style TargetType="ListViewItem">
 					<Setter Property="HorizontalContentAlignment" Value="Stretch" />
 					<Setter Property="VerticalContentAlignment" Value="Stretch" />
+					<Setter Property="FontFamily" Value="FiraMono Nerd Font" />
+					<Setter Property="Background" Value="#26233a" />
 				</Style>
 			</ListView.ItemContainerStyle>
 		</ListView>

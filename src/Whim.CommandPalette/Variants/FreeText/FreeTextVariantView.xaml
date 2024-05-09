@@ -12,5 +12,6 @@
 		Height="{x:Bind local:FreeTextVariantView.ViewHeight}"
 		Padding="12,11,0,0"
 		FontStyle="Italic"
+		FontFamily="FiraMono Nerd Font"
 		Text="{x:Bind Path=ViewModel.Prompt}" />
 </UserControl>

@@ -25,14 +25,20 @@
 				KeyDown="TextEntry_KeyDown"
 				PlaceholderText="{x:Bind Path=ViewModel.PlaceholderText, Mode=OneWay}"
 				Text="{x:Bind Path=ViewModel.Text, Mode=TwoWay}"
-				TextChanged="TextEntry_TextChanged" />
+				TextChanged="TextEntry_TextChanged"
+				Background="#26233a"
+				Foreground="#f6c177"
+				FontFamily="FiraMono Nerd Font" />
 
 			<Button
 				x:Name="Confirm"
 				Grid.Column="1"
 				Command="{x:Bind Path=ViewModel.ConfirmCommand}"
 				Content="{x:Bind Path=ViewModel.ConfirmButtonText, Mode=OneWay}"
-				Style="{StaticResource AccentButtonStyle}" />
+				Style="{StaticResource AccentButtonStyle}"
+				Background="#26233a"
+				Foreground="#f6c177"
+				FontFamily="FiraMono Nerd Font" />
 		</Grid>
 
 
